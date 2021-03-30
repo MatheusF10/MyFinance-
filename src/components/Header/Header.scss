@@ -1,0 +1,76 @@
+@import '../../variables.scss';
+
+.headerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: transparent;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+.headerContainer .buttonContent button{
+    background-color: #32B9A5;
+    border: none;
+    border-radius: $border-radius;
+    width: 5.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+.headerContainer .buttonContent button a{
+    color: $color;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+.buttonContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerContainer button:hover{
+    filter: brightness(90%);
+    transition: 0.2s;
+}
+.headerContainer h1 a{
+    font-family: 'rajdhani', sans-serif;
+    font-weight: 500;
+    color: $color;
+    text-decoration: none;
+}
+.headerContainer h1{
+    font-size: 2.5rem;
+    margin-left: 15px;
+}
+
+.headerContainer h1 a:hover{
+    color: $hover-color;
+    transition: 0.2s ease-in-out;
+}
+.headerContainer .menuItens{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    list-style: none;
+}
+.menuItens li{
+    padding: 20px;
+    display: flex;
+}
+.menuItens li a{
+    color: $color;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menuItens li a:hover{
+    filter: opacity(80%);
+    transition: 0.2s;
+}

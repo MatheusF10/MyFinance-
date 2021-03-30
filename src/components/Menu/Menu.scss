@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.menuOverflow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuOverflow p{
+    font-family: 'rajdhani', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
