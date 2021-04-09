@@ -15,14 +15,13 @@ export default function User(){
     async function handleRegister(e){
         const data =  { user_name, salario, email, senha_usuario }
         const response = await api.post('/api/usuarios', data)
-
-        try{
-            alert(`Seu ID é ${response.data.id}`)
-
+        if(response.status === 200){
+            alert("Sua Conta Foi Criada")
             window.location.href = '/'
-        }catch(err){
-            alert('Ocorreu um erro')
+        }else{
+            alert ("erro")
         }
+        
     }
     return(
         <>

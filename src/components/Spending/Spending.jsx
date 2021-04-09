@@ -69,16 +69,10 @@ export default function SpendingComponent() {
                     <input placeholder="Digite o valor do gasto" type="text" value={spending} onChange={e => setSpending(e.target.value)} />
 
                     <button onClick={handleSubmit}>Salvar</button>
-
+                    
 
                 </div>
-                <div className="tableData">
-                    <h1>Meus Gastos:{spend}€</h1>
-                    
-                    
-                    
-                    
-                </div>
+                <h1>Meus Gastos:{spend}€</h1>
                 {spendName}
             </div>
             
